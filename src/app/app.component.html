@@ -1,0 +1,81 @@
+<div class="wrapper">
+  <section id="starter" class="starter">
+    <div class="content">
+      <header class="header" fxLayout="row wrap" fxLayoutAlign="start center">
+        <img class="header-logo" src="../assets/logo.png" alt="logo">
+        <button mat-icon-button color="black" class="navbar-toggle" (click)="toggleNavbar()">
+          <mat-icon>{{!navbarOpened ? 'menu': 'close'}}</mat-icon>
+        </button>
+        <nav class="navbar">
+          <div fxFlex class="nav">
+            <span fxFlex></span>
+            <li mat-button class="nav-item"><a class="nav-link" href="">Home</a></li>
+            <li mat-button class="nav-item"><a class="nav-link" href="">About Us</a></li>
+            <li mat-button class="nav-item"><a class="nav-link" href="">What We Do</a></li>
+            <button mat-button class="nav-item-btn"><a class="nav-link" href="">Contact Us</a></button>
+          </div>
+          <div fxFlex class="nav-service">
+            <li mat-button class="nav-item"><a class="nav-link" href="">Services</a></li>
+            <li mat-button class="nav-item"><a class="nav-link" href="">Training and Implementation</a></li>
+            <li mat-button class="nav-item"><a class="nav-link" href="">Cyber Consultants</a></li>
+            <li mat-button class="nav-item"><a class="nav-link" href="">Consultancy and brand protection</a></li>
+            <li mat-button class="nav-item"><a class="nav-link" href="">Software</a></li>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="inner">
+      <div class="main-box">
+        <div class="sidebar">
+          <h2 class="text">Never Caught Off-Guard Again</h2>
+          <p class="text-info">We are specialist in protecting your assets and reputation to make sure you
+            operate risk-free and focus on your core business.</p>
+          <button class="text-btn"><a class="sale-btn" href="">Learn More</a></button>
+        </div>
+        <img class="helmet" src="../assets/space-helmet.png">
+      </div>
+      <figure>
+        <button (click)="toContact()" class="arrow-down"></button>
+      </figure>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="contact-head">
+      <div class="contact-logo">contact <span>us</span></div>
+      <div (click)="toHome()" routerLink="/home" class="arrow-up"></div>
+    </div>
+    <div class="contact-form">
+      <div class="hero-body">
+        <div class="body-form">
+          <form [formGroup]="exform">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input formControlName="name" type="text" class="form-control" />
+              <div *ngIf="name?.invalid && name?.touched"  class="alert alert-danger">Full Name is required</div>
+            </div>
+            <div class="form-group">
+              <label>Company Name</label>
+              <input formControlName="company" type="text" />
+              <div *ngIf="company?.invalid && company?.touched"  class="alert alert-danger">Company name must have min 2 letters</div>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input formControlName="phone" type="text" />
+              <div *ngIf="phone?.invalid && phone?.touched" class="alert alert-danger">Phone Number is invalid</div>
+            </div>
+            <div class="form-group">
+              <label>E-mail</label>
+              <input formControlName="email" type="email" />
+              <div *ngIf="email?.invalid && email?.touched" class="alert alert-danger">Email is invalid</div>
+            </div>
+            <div class="form-group">
+              <label>Write Us Messages</label>
+              <input type="text" formControlName="message" />
+              <button (click)="clicksub()" [disabled]="exform.invalid" class="contact-btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

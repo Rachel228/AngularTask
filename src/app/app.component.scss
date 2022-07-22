@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu&display=swap");
+
+$backgroundColor: #FFBC00;
+$backgroundColorSecond: #ffffff;
+$colortextFirst: #000000;
+$colortextSecond: #111111;
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content {
+    padding-top: 47px;
+    line-height: 21px;
+    padding-left: 375px;
+    padding-right: 335px;
+    min-width: 1189px;
+}
+
+.contact {
+    width: 1920px;
+    background: #ffffff;
+    height: 100%;
+}
+.nav {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    align-items: center;
+    &-item {
+        list-style: none;
+        padding-left: 16px;
+        padding-right: 35px;
+    }
+    button {
+        font-family: "Ubuntu", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        height: 50px;
+        background: #ffffff;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+    }
+    &-link {
+        text-decoration: none;
+        line-height: 21px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        color: $colortextSecond;
+    }
+}
+.nav-item-btn {
+    justify-content: center;
+    width: 118px;
+    height: 50px;
+    background-color: $backgroundColorSecond;
+    border-radius: 12px;
+    border: white;
+}
+.nav-link-btn {
+    color: $colortextFirst;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        margin-top: -13px;
+    }
+}
+.text {
+    width: 437px;
+    font-size: 68px;
+    font-weight: 400;
+    font-family: "Anton", sans-serif;
+    line-height: 88px;
+    text-transform: uppercase;
+    padding-top: 178px;
+}
+.text-info {
+    width: 560px;
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 29px;
+    padding-left: 82px;
+    padding-top: 33px;
+}
+.text-btn {
+    margin-left: 81px;
+    margin-top: 63px;
+    justify-content: center;
+    width: 176px;
+    height: 65px;
+    background-color: $backgroundColorSecond;
+    border-radius: 12px;
+    border: white;
+}
+.sale-btn {
+    text-decoration: none;
+    text-align: center;
+    color: $colortextSecond;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+.box {
+    margin-left: 146px;
+    margin-top: 79px;
+}
+.inner {
+    padding-left: 294px;
+    padding-right: 365px;
+}
+.arrow-down {
+    background: url(../assets/arrow.png) no-repeat;
+    height: 200px;
+    width: 21px;
+    margin-top: -85px;
+    margin-left: 82px;
+    border: none;
+    cursor: pointer;
+}
+.arrow-up {
+    background: url(../assets/arrow-up.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 36px;
+}
+.contact-form {
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    background: #ffffff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    height: 878px;
+}
+.hero-body {
+    width: 100%;
+    background-color: $backgroundColorSecond;
+}
+.form-group {
+    margin-left: 52px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 57px;
+}
+
+.contact-logo {
+    width: 219px;
+    height: 75px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: $backgroundColor;
+    margin-top: 22px;
+    margin-left: 26px;
+    span {
+        color: $colortextFirst;
+    }
+}
+.contact-head {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 350px;
+    padding-right: 230px;
+}
+.body-form {
+    margin: 0 auto;
+    width: 1170px;
+    padding-top: 23px;
+    padding-left: 18px;
+    padding-bottom: 63px;
+}
+.contact-btn {
+    width: 170px;
+    height: 61px;
+    background: $backgroundColor;
+    color: $colortextFirst;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+}
+.form-group {
+	&:last-child {
+		input {
+			margin-top: 110px;
+			margin-bottom: 19px;
+		}
+	}
+	&:nth-child(2) {
+		label {
+			margin-top: -5px;
+		}
+	}
+	&:nth-child(3) {
+		label {
+			margin-top: 5px;
+		}
+	}
+	&:nth-child(4) {
+		label {
+			margin-top: -10px;
+		}
+	}
+	&:nth-child(5) {
+		label {
+			margin-top: 9px;
+		}
+	}
+}
+
+input {
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+input:focus {
+    outline: none;
+}
+
+label {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
+}
+
+.main-box {
+    display: flex;
+}
+
+.menu-icon {
+    margin: 20px auto;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+}
+.menu-icon span {
+    background-color: $colortextFirst;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s ease;
+}
+.menu-icon span:first-child {
+    top: 0;
+}
+.menu-icon span:nth-child(2) {
+    top: 6px;
+}
+.menu-icon span:last-child {
+    top: 12px;
+}
+.menu-icon:hover span:nth-child(2) {
+    opacity: 0;
+}
+.menu-icon:hover span:first-child,
+.menu-icon:hover span:last-child {
+    top: 6px;
+    background-color: red;
+}
+.menu-icon:hover span:first-child {
+    transform: rotate(45deg);
+}
+.menu-icon:hover span:last-child {
+    transform: rotate(-45deg);
+}
+
+
+.navbar-toggle {
+    display: none !important;
+    position: relative !important;
+    right: 5px;
+}
+.icon-button {
+    .mat-icon {
+        font-size: 20px;
+    }
+}
+.nav-service {
+    display: none;
+}
+.helmet {
+    padding-left: 148px;
+    padding-top: 77px;
+}
+
+@media (max-width: 425px) {
+    .navbar-toggle {
+        display: block !important;
+    }
+    .main-box {
+        display: block;
+    }
+    .content {
+        max-width: 100%;
+        height: 100px;
+    }
+    .nav {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .body-form {
+        max-width: 625px;
+        align-items: center;
+        padding-right: 325px;
+    }
+    .arrow-down {
+        display: none;
+    }
+    .arrow-up {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .hero-body {
+        background-color: $backgroundColorSecond;
+    }
+    .navbar-opened:host {
+        .nav {
+            display: block;
+            width: 100%;
+            height: auto;
+            color: $colortextFirst;
+            background: $backgroundColor;
+        }
+        .nav-service {
+            display: block;
+            width: 100%;
+            height: auto;
+            color: #000;
+            background: $backgroundColor;
+            padding-bottom: 60px;
+        }
+    }
+    .navbar-opened:host .nav .nav-service a {
+        display: block;
+        width: 100%;
+        line-height: 56px !important;
+    }
+}
+
+@media (max-width: 320px) {
+	.navbar {
+		position: absolute;
+		margin: 0 auto;
+		bottom: 0;
+		width: 100%;
+	}
+	.arrow-down {
+		display: none;
+	}
+	.content {
+		padding-left: 14px;
+	}
+	.inner {
+		padding-left: 22px;
+	}
+	.text {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 130%;
+    text-transform: uppercase;
+
+    color: #000000;
+	}
+	.text-info {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+
+    color: #000000;
+	}
+	.helmet {
+		width: 401px;
+		padding-top: 48px;
+		padding-left: 0px;
+	}
+	.arrow-up {
+		display: none;
+	}
+	.contact-head {
+		padding-left: 0px;
+	}
+	.contact-logo {
+		margin-left: 43px;
+	}
+	.body-form {
+		margin-left: 0;
+		background: #ffffff;
+	}
+	input {
+		width: 152px;
+		z-index: 1;
+	}
+	.form-group {
+		&:last-child {
+			input {
+				margin-top: 25px;
+			}
+		}
+	}
+	form {
+		width: 290px;
+	}
+	.header {
+		max-width: 285px;
+	}
+	.text-btn {
+		margin-left: 0px;
+	}
+	.hero-body {
+		height: 0;
+		padding-top: 25px;
+		background-color: $backgroundColorSecond;
+	}
+	.wrapper {
+		overflow-x: hidden;
+	}
+	.main-nav {
+		max-width: 270px;
+		padding-bottom: 205px;
+		height: 57vh;
+	}
+	.nav-item {
+		padding-bottom: 39px;
+	}
+	.nav {
+		.nav-item-btn {
+			background: #ffbc00;
+			padding-bottom: 45px;
+		}
+	}
+}
+.wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.alert {
+    color: #ef2828;
+    margin-top: 5px;
+}
+@media (min-width: 375px) and (max-width: 425px) {
+    .nav {
+        display: flex;
+    }
+    .navbar-toggle {
+        color: $backgroundColor;
+    }
+    .contact-head{
+        padding-left: 613px;
+    }
+    .header {
+        padding-right: 194px;
+    }
+    form {
+        width: 642px;
+    }
+    .arrow-up{
+        display: none;
+    }
+    .arrow-down{
+        display: none;
+    }
+    .body-form{
+        background: #ffffff;
+    }
+    .contact{
+        padding-bottom: 260px;
+    }
+
+}
